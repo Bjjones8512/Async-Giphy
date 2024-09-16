@@ -12,6 +12,7 @@ async function getImage(query){
         const imgUrl = data.data[0].images.original.url;
         console.log(imgUrl);
 
+        return imgUrl
     }catch(err){
         console.error(err)
     }
